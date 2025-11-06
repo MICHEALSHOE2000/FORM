@@ -85,6 +85,10 @@
 
     <!-- Formspree Integration -->
     <form action="https://formspree.io/f/meopylgj" method="POST">
+      <!-- Redirect after submission -->
+      <input type="hidden" name="_redirect" value="https://pellaform.netlify.app//success.html" />
+      <!-- Optional: Email auto-response subject -->
+      <input type="hidden" name="_subject" value="Your Application Has Been Received" />
 
       <!-- Full Name -->
       <label for="name">Full Name</label>
