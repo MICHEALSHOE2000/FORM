@@ -5,63 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marketer Recruitment Form</title>
   <style>
-    /* Basic Responsive Layout */
+    /* Enhanced, Bigger, Bolder, More Attractive Form Styling */
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 20px;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e9efff, #f5f7ff);
+      padding: 30px;
       margin: 0;
     }
 
     .container {
-      max-width: 600px;
+      max-width: 650px;
       margin: 0 auto;
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      border: 2px solid #e6ecff;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 20px;
+      font-size: 32px;
+      font-weight: 800;
+      color: #003399;
+      margin-bottom: 25px;
     }
 
     label {
-      font-weight: bold;
-      margin-top: 15px;
+      font-weight: 700;
+      margin-top: 18px;
       display: block;
+      font-size: 18px;
+      color: #222;
     }
 
     input, select, textarea {
       width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 6px;
-      font-size: 16px;
+      padding: 16px;
+      border: 2px solid #cbd5ff;
+      border-radius: 10px;
+      margin-top: 8px;
+      font-size: 18px;
+      background: #f8faff;
+      transition: 0.25s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #0066ff;
+      background: #ffffff;
+      box-shadow: 0 0 6px rgba(0, 102, 255, 0.3);
+      outline: none;
     }
 
     button {
       width: 100%;
-      padding: 14px;
-      margin-top: 20px;
+      padding: 18px;
+      margin-top: 30px;
       border: none;
       background: #0066ff;
       color: white;
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 700;
       cursor: pointer;
-      border-radius: 6px;
+      border-radius: 10px;
+      letter-spacing: 0.5px;
+      transition: 0.25s ease;
     }
 
     button:hover {
-      background: #004fcc;
+      background: #004bcc;
+      transform: translateY(-2px);
     }
 
     /* Small screens */
     @media (max-width: 500px) {
+      .container {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+
       input, select, textarea, button {
-        font-size: 15px;
+        font-size: 16px;
       }
     }
   </style>
@@ -71,7 +98,7 @@
     <h2>Marketer Recruitment Form</h2>
 
     <!-- Form connected to Formspree -->
-    <form id="recruitForm" action="https://formspree.io/f/meopylgj" method="POST">
+    <form id="recruitForm" action="https://formspree.io/f/yourIDhere" method="POST">
 
       <!-- Name -->
       <label for="name">Full Name</label>
